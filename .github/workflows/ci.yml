@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: bun install && bun install -g @lhci/cli@0.14.x
-      - run: bun run build
+      - run: npm install && npm install -g @lhci/cli@0.14.x
+      - run: npm run build
       - run: lhci autorun

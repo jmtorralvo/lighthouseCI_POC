@@ -5,4 +5,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
 	plugins: [react()],
 	base: "/lighthouseCI_POC/",
+	server: {
+		open: true,
+		port: 3000,
+	},
 });
